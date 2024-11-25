@@ -32,9 +32,15 @@ function getProblem(req, res, next) {
     }
 }
 
-function getProblems(req, res, next) {
+async function getProblems(req, res, next) {
     try {
-        throw new NotImplemented('getproblems');
+        const response = await problemService.getAllProblems();
+        return res.status(StatusCodes.OK).json ({
+            success: true,
+            message: 'Successfully fetched all problems',
+            error: null,
+            data: response
+        })
     } catch (error) {
         next(error)
     }
