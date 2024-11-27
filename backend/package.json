@@ -10,8 +10,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/sanitize-html": "^2.13.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "nodemon": "^3.1.7"
+    "http-status-codes": "^2.3.0",
+    "marked": "^15.0.2",
+    "mongoose": "^8.8.2",
+    "nodemon": "^3.1.7",
+    "sanitize-html": "^2.13.1",
+    "turndown": "^7.2.0"
   }
 }
